@@ -2,15 +2,15 @@
    Palette: warm Parisian cream, gold, espresso. */
 
 :root {
-  --bg: #fbf7ef;
-  --pale: #f3ead9;
-  --line: #e2d5be;
-  --brick: #c0933f;
-  --brick-deep: #8a6a22;
-  --slate: #4f463a;
-  --ink: #2c261f;
-  --gold: #b9872f;
-  --white: #fffcf6;
+  --bg: #fdf9f3;
+  --pale: #f4e9e4;
+  --line: #e4d4ca;
+  --brick: #5c8a63;
+  --brick-deep: #3f6b47;
+  --slate: #5a5146;
+  --ink: #2f2a24;
+  --gold: #d0678c;
+  --white: #fffdf8;
   --font-d: "Fraunces", Georgia, serif;
   --font-b: "Outfit", system-ui, sans-serif;
   --rad: 14px;
@@ -120,7 +120,7 @@ button { font-family: inherit; cursor: pointer; }
 .btn-call {
   background: var(--brick-deep); color: #fff;
 }
-.btn-call:hover { background: var(--brick); transform: translateY(-1px); box-shadow: 0 8px 20px rgba(124, 49, 39, .32); }
+.btn-call:hover { background: var(--brick); transform: translateY(-1px); box-shadow: 0 8px 20px rgba(63, 107, 71, .35); }
 
 /* ---- mobile CTA bar ---- */
 .cta-bar {
@@ -148,16 +148,16 @@ body { padding-bottom: 0; }
   content: ""; position: absolute; inset: 0; z-index: -2;
   background: linear-gradient(115deg, rgba(23, 17, 12, .78) 0%, rgba(23, 17, 12, .5) 48%, rgba(23, 17, 12, .28) 100%);
 }
-.hero .kicker { color: #ffd9a8; }
+.hero .kicker { color: #f3c6d3; }
 .kicker {
   font-size: .72rem; letter-spacing: .32em; text-transform: uppercase;
-  color: var(--brick); font-weight: 500;
+  color: var(--gold); font-weight: 500;
 }
 .hero h1 {
   font-family: var(--font-d); font-size: clamp(2.7rem, 7.5vw, 4.6rem);
   line-height: 1.06; margin: 1rem 0 1.2rem; font-weight: 600;
 }
-.hero h1 em { font-style: italic; color: #ffd9a8; }
+.hero h1 em { font-style: italic; color: #f3c6d3; }
 .hero .lead { max-width: 41rem; font-size: 1.12rem; }
 .hero h1, .hero .lead, .hero .kicker, .hero-note { color: #fff; text-shadow: 0 2px 16px rgba(0, 0, 0, .5); }
 .hero-cta { display: flex; gap: .9rem; margin-top: 2.1rem; flex-wrap: wrap; }
@@ -166,7 +166,7 @@ body { padding-bottom: 0; }
 .btn-ghost-light:hover { background: #fff; color: var(--ink); transform: translateY(-1px); }
 .hero-note { margin-top: 1.4rem; font-size: .92rem; }
 .hero-note a { font-weight: 600; border-bottom: 1px solid rgba(255, 250, 242, .6); }
-.hero-note a:hover { color: #ffd9a8; }
+.hero-note a:hover { color: #f3c6d3; }
 
 /* ---- mobile free-estimate pill ---- */
 .mobile-est { display: none; }
