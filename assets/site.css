@@ -442,11 +442,10 @@ footer h4 { font-size: .72rem; letter-spacing: .28em; text-transform: uppercase;
 @media (max-width:640px){ .rgrid { grid-template-columns:1fr } }
 
 /* ---- A Touch of Paris: mobile hardening ---- */
-.hero h1 em { display: block; }
 @media (max-width: 560px) {
   .hero { padding: 4.6rem 0 3.4rem; }
-  .hero h1 { font-size: clamp(2rem, 8.6vw, 2.6rem); line-height: 1.12; word-break: normal; overflow-wrap: anywhere; }
-  .hero h1 em { display: block; }
+  .hero h1 { font-size: clamp(1.95rem, 8.4vw, 2.5rem); line-height: 1.12; }
+  .hero h1, .hero h1 em { word-break: normal; overflow-wrap: normal; }
   .hero .lead { font-size: 1.02rem; }
   .hero-cta { gap: .7rem; }
   .hero-cta .btn { width: 100%; text-align: center; }
