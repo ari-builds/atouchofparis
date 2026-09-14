@@ -148,22 +148,11 @@ body { padding-bottom: 0; }
   content: ""; position: absolute; inset: 0; z-index: -2;
   background: linear-gradient(115deg, rgba(23, 17, 12, .78) 0%, rgba(23, 17, 12, .5) 48%, rgba(23, 17, 12, .28) 100%);
 }
-.hero-orb {
-  position: absolute; z-index: -1; width: 46vw; height: 46vw;
-  left: 50%; top: 46%; transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: radial-gradient(circle at 36% 40%, rgba(255, 214, 170, .16), rgba(185, 132, 76, .08) 55%, transparent 72%);
-  animation: breathe 9s ease-in-out infinite;
-}
-@keyframes breathe {
-  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: .9; }
-  50% { transform: translate(-50%, -50%) scale(1.12); opacity: 1; }
-}
+.hero .kicker { color: #ffd9a8; }
 .kicker {
   font-size: .72rem; letter-spacing: .32em; text-transform: uppercase;
   color: var(--brick); font-weight: 500;
 }
-.hero .kicker { color: #ffd9a8; }
 .hero h1 {
   font-family: var(--font-d); font-size: clamp(2.7rem, 7.5vw, 4.6rem);
   line-height: 1.06; margin: 1rem 0 1.2rem; font-weight: 600;
@@ -306,10 +295,7 @@ body { padding-bottom: 0; }
 .page-hero { padding: 3.4rem 0 2.6rem; position: relative; overflow: clip; }
 .page-hero::before {
   content: ""; position: absolute; inset: 0; z-index: -2;
-  background:
-    radial-gradient(55% 60% at 8% 0%, rgba(168, 75, 60, .13), transparent 60%),
-    radial-gradient(50% 55% at 95% 20%, rgba(185, 132, 76, .15), transparent 60%),
-    var(--bg);
+  background: var(--bg);
 }
 .page-hero h1 { font-family: var(--font-d); font-size: clamp(2.1rem, 6vw, 3.4rem); margin: .6rem 0 1rem; font-weight: 600; }
 .page-hero .lead { max-width: 42rem; font-size: 1.07rem; }
