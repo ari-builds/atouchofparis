@@ -2,6 +2,8 @@
   var go = function () {
     var BOOK = "https://booksy.com/en-us/1605658_atouchofparis_braids-locs_18698_north-chicago";
     var IG = "https://www.instagram.com/da_real_atouchofpariss/";
+    var PHONE = "(773) 200-1932";
+    var TEL = "+17732001932";
 
     function esc(s) {
       return String(s)
@@ -23,6 +25,7 @@
       "</a>" +
       '<div class="top-ph">' +
       '<span class="pwhy">Book a Look &middot; Satisfaction Guaranteed</span>' +
+      '<a class="btn btn-call" href="' + TEL + '">Call/text ' + PHONE + "</a>" +
       '<a class="btn btn-call" href="' + BOOK + '" target="_blank" rel="noopener">Book on Booksy</a>' +
       "</div>" +
       '<button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu">' +
@@ -34,7 +37,9 @@
     ctaBar.className = "cta-bar";
     ctaBar.id = "ctaBar";
     ctaBar.innerHTML =
-      '<a href="' + BOOK + '" target="_blank" rel="noopener">Book your look on Booksy <span aria-hidden="true">&#8594;</span></a>';
+      '<div class="cta-in"><a class="cta-ph" href="tel:' + TEL + '">Call or text<br><b>' + PHONE + "</b></a>" +
+      '<a href="' + BOOK + '" target="_blank" rel="noopener">Book on Booksy &#8594;</a>' +
+      "</div>";
 
     var menu = document.createElement("div");
     menu.className = "menu";
@@ -61,7 +66,9 @@
       '<a href="' + BOOK + '" target="_blank" rel="noopener">Open Booksy page</a>' +
       '<a href="' + BOOK + '/gift-cards" target="_blank" rel="noopener">Gift cards</a>' +
       "</div>" +
-      '<div class="mgroup"><h4>Follow</h4>' +
+      '<div class="mgroup"><h4>Contact</h4>' +
+      '<a href="tel:' + TEL + '">Call or text ' + PHONE + "</a>" +
+      '<a href="sms:' + TEL + '">Text an appointment</a>' +
       '<a href="' + IG + '" target="_blank" rel="noopener">Instagram &ndash; da_real_atouchofpariss</a>' +
       "</div>" +
       "</nav>" +
@@ -90,6 +97,7 @@
       "</nav></div>" +
       '<div class="foot-contact"> <h4>Get in touch</h4>' +
       '<p style="margin-top:.6rem;font-size:.92rem;color:#d9cbb4">' +
+      'Call or text: <a href="tel:' + TEL + '">' + PHONE + "</a><br>" +
       'Instagram: <a href="' + IG + '" target="_blank" rel="noopener">da_real_atouchofpariss</a><br>' +
       "Booksy: <a href='" + BOOK + "' target='_blank' rel='noopener'>atouchofparis</a><br>" +
       '<span style="font-size:.8rem">Same-day? Message on Instagram before booking. Kid services book before 3&nbsp;PM. Prices shown are starting prices.</span>' +
